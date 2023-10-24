@@ -35,7 +35,7 @@ const ContactPage = () => {
           <HiOutlineMail size={150} />
         </>
       ),
-      href: "mailto:prithambg333@gmail.com",
+      href: "mailto:prithambg.work@gmail.com",
     },
     {
       id: 4,
@@ -65,7 +65,7 @@ const ContactPage = () => {
       >
         {links.map(({id , name , child , href , download}) => {
           return (
-            <div className="card" style={{ width: "150px" }} key={id}>
+            <div className="card" style={{ width: "150px" , marginTop: "40px" , gap: "40px"}} key={id}>
               <a href={href} target="_blank" style={{textDecoration: "none" , color: 'black'}} rel="noreferrer" download={download}>
               <div className="card-img-top">
                 {child}
