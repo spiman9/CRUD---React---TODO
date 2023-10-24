@@ -2,8 +2,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import UpdatePage from "./Pages/UpdatePage";
 import Home from "./Pages/Home";
 import ReadPage from "./Pages/ReadPage";
-import Contact from "./Pages/Contact";
-import About from "./Pages/About";
+import ContactPage from "./Pages/ContactPage";
+import AboutPage from "./Pages/AboutPage";
 
 function App() {
   return (
@@ -20,10 +20,10 @@ function App() {
         <Route exact path="/update" element={<UpdatePage />}>
         </Route>
 
-        <Route exact path="/contact" element={<Contact />}>
+        <Route exact path="/contact" element={<ContactPage />}>
         </Route>
 
-        <Route exact path="/about" element={<About />}>
+        <Route exact path="/about" element={<AboutPage />}>
         </Route>
         
       </Routes>
