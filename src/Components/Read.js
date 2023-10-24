@@ -49,13 +49,21 @@ const Read = () => {
                 setTabledark('table-dark');
             }
           }}
+
+          style={{
+            fontSize: '40px',
+            marginLeft: 'auto'
+          }}
+
         />
       </div>
 
       <div className="header d-flex justify-content-between mt-5 border">
-        <h1 className="" style={{ fontSize:'35px' , fontWeight: 'bold' }}>Todo List</h1>
-        <Link to="/">
-          <button className="btn btn-secondary mt-2 p-3" style={{
+        <h1 className="" style={{ fontSize:'35px' , fontWeight: 'bold' , display: 'flex' , justifyItems:'center' , alignItems: 'center' }}>Todo List</h1>
+        <Link to="/" style={{
+           display: 'flex' , justifyItems:'center' , alignItems: 'center', 
+        }}>
+          <button className="btn btn-secondary p-3" style={{
               fontSize: '20px' , fontWeight: 'bold'
             }}>Back</button>
         </Link>
