@@ -53,9 +53,11 @@ const Read = () => {
       </div>
 
       <div className="header d-flex justify-content-between mt-5 border">
-        <h1 className="">Todo List</h1>
+        <h1 className="" style={{ fontSize:'35px' , fontWeight: 'bold' }}>Todo List</h1>
         <Link to="/">
-          <button className="btn btn-secondary mt-2 p-3">Back</button>
+          <button className="btn btn-secondary mt-2 p-3" style={{
+              fontSize: '20px' , fontWeight: 'bold'
+            }}>Back</button>
         </Link>
       </div>
 
@@ -104,6 +106,7 @@ const Read = () => {
                       <button
                         className="btn btn-danger"
                         onClick={() => handleDelete(each.id)}
+                        
                       >
                         Delete
                       </button>

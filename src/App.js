@@ -1,8 +1,9 @@
-import "./App.css";
-import Create from "./Components/Create";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Update from "./Components/Update";
-import Read from "./Components/Read";
+import UpdatePage from "./Pages/UpdatePage";
+import Home from "./Pages/Home";
+import ReadPage from "./Pages/ReadPage";
+import Contact from "./Pages/Contact";
+import About from "./Pages/About";
 
 function App() {
   return (
@@ -10,13 +11,19 @@ function App() {
     <BrowserRouter>
     <div className="container">
       <Routes>
-        <Route exact path="/" element={<Create />}>
+        <Route exact path="/" element={<Home />}>
         </Route>
         
-        <Route exact path="/read" element={<Read />}>
+        <Route exact path="/read" element={<ReadPage />}>
         </Route>
 
-        <Route exact path="/update" element={<Update />}>
+        <Route exact path="/update" element={<UpdatePage />}>
+        </Route>
+
+        <Route exact path="/contact" element={<Contact />}>
+        </Route>
+
+        <Route exact path="/about" element={<About />}>
         </Route>
         
       </Routes>

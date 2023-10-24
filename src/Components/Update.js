@@ -31,27 +31,40 @@ const Update = () => {
   return (
     <>
     <div className="heading d-flex justify-content-between mt-5">
-        <h1 className="pb-2">Update</h1>
+        <h1 className="pb-2" style={{ fontSize:'35px' , fontWeight: 'bold'}}>Update</h1>
         <Link to="/read">
-        <button className="btn btn-primary">Show Data</button>
+        <button className="btn btn-primary" style={{
+              fontSize: '20px' , fontWeight: 'bold'
+            }}>Show Data</button>
         </Link>
         <Link to="/">
-        <button className="btn btn-primary">Create</button>
+        <button className="btn btn-primary" style={{
+              fontSize: '20px' , fontWeight: 'bold'
+            }}>Create</button>
         </Link>
     </div>
 
       <form className="border border-dark p-5 mt-5">
         <div className="mb-3">
-          <label className="form-label">Your Name</label>
+          <label className="form-label" style={{
+            fontSize:'35px'
+          }}>Your Name</label>
           <input
             type="text"
             className="form-control"
             onChange={(e) => setName(e.target.value)}
             value={name}
+            style={
+              { 
+                fontSize: '25px'
+              }
+            }
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="exampleInputEmail1" className="form-label">
+          <label htmlFor="exampleInputEmail1" className="form-label" style={{
+            fontSize:'35px'
+          }}>
             Todo Message
           </label>
           <input
@@ -62,6 +75,12 @@ const Update = () => {
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Write your todo message here"
             value={email}
+            style={
+              {
+                fontWeight: 'bold' , 
+                fontSize: '25px',
+              }
+            }
           />
         </div>
         {/* {name}
@@ -70,6 +89,9 @@ const Update = () => {
           type="submit"
           className="btn btn-success"
           onClick={handleUpdate}
+          style={{
+            fontSize: '20px' , fontWeight: 'bold'
+          }}
         >
           Edit
         </button>

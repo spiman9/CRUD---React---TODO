@@ -1,0 +1,24 @@
+footer{
+    margin-top: 30px;
+    background-color:aqua;
+    text-align: center;
+    color: black;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    animation: Pritham 3s linear 0s infinite alternate-reverse;
+}
+
+
+@keyframes Pritham {
+0%{
+opacity: 0;
+}
+50%
+{
+opacity: 0.7;
+}
+100%{
+opacity: 1;
+}
+}
