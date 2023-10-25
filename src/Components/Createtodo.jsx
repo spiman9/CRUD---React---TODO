@@ -26,7 +26,7 @@ const Create = () => {
   return (
     <>
       <div className="mt-5  p-5 " style={{
-        fontSize: '30px' , fontWeight: 'bold'
+        fontSize: '30px' , fontWeight: 'bold' , height: '100vh'
       }}>
         <div className="heading d-flex justify-content-between">
           <h1 className="font-weight-bold " style={{

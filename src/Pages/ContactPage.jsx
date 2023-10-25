@@ -50,7 +50,9 @@ const ContactPage = () => {
     },
   ];
   return (
-    <div>
+    <div style={{
+      height: '100vh'
+    }}>
       <Navbar1 />
       <div
         className="contact-container"
@@ -60,7 +62,7 @@ const ContactPage = () => {
           alignContent: "center",
           flexWrap: "wrap",
           flexDirection: "row",
-          marginTop: "100px"
+          marginTop: "100px",
         }}
       >
         {links.map(({id , name , child , href , download}) => {
